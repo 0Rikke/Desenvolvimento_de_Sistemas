@@ -7,5 +7,44 @@
 
 }
 
+form{
+
+    margin: 50px 350px 50px 350px ;
+   
+}
+fieldset{
+    padding: 20px;
+}
+label{
+    display: block;
+}
+.inp{
+    margin: 10px;
+}
+.inp>input{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #9999;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
 
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.butao{
+    width: 150px;
+    height: 50px;
+    border:none;
+    background-color: aqua;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=][, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastroCli.css">
     <title>Cadastro cliente</title>
 </head>
 <body>
@@ -12,7 +12,6 @@
         <a href="index.php"><img class = "seta"src="img/setinha.png" alt="seta para voltar a página"></a>
     </nav>
     <h1>Cadastro de Usuário</h1>
-    
     <form action="inserir.php" method="$_POST">
         
         <div class="inside">
@@ -48,7 +47,7 @@
                 <button class="botao" type="submit">Cadastrar</button>
             </div>
             <div>
-                <p class="inp">Já possui uma conta uma?</p>
+                <p class="inp P">Já possui uma conta uma?</p>
             </div>
 
             <div class="inp">
@@ -58,8 +57,10 @@
         
     </form>
 
-    <footer class="footer">
-        <p>&copyDesenvolvimentoDeSistemas</p>
+    <footer>
+        <div class="footer">
+            <p>&copyDesenvolvimentoDeSistemas</p>
+        </div>
     </footer>
 </body>
 </html>

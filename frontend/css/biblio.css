@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: crimson;
+    height: 50px;
+    
+    
+  }
+  
+  li {
+    display: inline;
+   
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  li a:hover {
+    background-color: rgba(255, 255, 255);
+    color: crimson;
+  }
+
+  .bibli-nav{
+      display: flex;
+  }
+

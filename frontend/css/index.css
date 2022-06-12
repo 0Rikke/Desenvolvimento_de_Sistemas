@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
     box-sizing: border-box;
 }
+
 footer{
 
     display: flex;
@@ -21,33 +23,105 @@ footer{
     text-align: center;
 }
 
-ul {
+nav ul {
     overflow: hidden;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    
     background-color: crimson;
     height: 50px;
+
     
     
   }
   
-  li {
+nav  li {
     display: inline;
    
     float: left;
   }
 
-  li a {
+nav  li a {
     display: block;
     color: white;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
     transition: .5s;
+    
+    
   }
 
-  li a:hover {
+nav  li a:hover {
     background-color: rgba(255, 255, 255);
     color: crimson;
+
   }
+
+#txtDes{
+  padding: 20px;
+  text-align: center;
+  color: crimson;
+  font-size: 40px;
+}
+
+.car{
+  padding: 10px;
+  display: flex;
+  margin-bottom: 200px;
+  background-image: linear-gradient(rgba(220, 20, 60, 1), rgba(220, 20, 60, 0.8));
+  margin: 20px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+ 
+}
+.grid>p{
+   padding-left: 25px;
+}
+.iten1{
+  margin: 15px;
+  width: 45%;
+  
+  
+}
+.iten2{
+  text-align: left;
+  width: 55%;
+  
+}
+
+.iten2>img{
+  max-width: 95%;
+  
+}
+
+.text{
+ width: 73%;
+ padding: 2%;
+ text-align: justify;
+ justify-content: center;
+ font-size: larger;
+}
+
+.title{
+  color: white;
+  text-align: center;
+}
+
+#txtsobre{
+  padding: 20px;
+  margin-bottom: 20px;
+
+  color: crimson;
+  font-size: 40px;
+}
+.main{
+  display: flex;
+}
+
+.borImg{
+  background: rgba(0, 0, 0, 0.8);
+}

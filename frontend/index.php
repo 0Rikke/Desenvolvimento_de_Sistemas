@@ -13,8 +13,8 @@
     <nav>
         <ul id="nav">
             <li><a href="index.php"> Home</a></li>
-            <li><a href=""> Biblioteca </a></li>
-            <li style="float:right"><a href="">Logar</a></li>
+            <li><a href="biblioteca.php"> Biblioteca </a></li>
+            <li style="float:right"><a href="login.php">Logar</a></li>
             <li style="float:right"><a href="cadastro_cli.php">Cadastrar</a></li>
         </ul>
     </nav>
@@ -84,8 +84,8 @@
         </div>    
             <ul class="mid">
                 <li>Categoraias</li>
-                <li>quantidad de de estrekas</li>
-                <li><a href="">mais detalhes</a></li>
+                <li>Quantidade de estrelas</li>
+                <li><a href="">Mais detalhes</a></li>
                 
             </ul>
         

@@ -8,6 +8,7 @@
 
 
 ul {
+   
     overflow: hidden;
     list-style-type: none;
     margin: 0;
@@ -38,7 +39,100 @@ ul {
     color: crimson;
   }
 
-  .bibli-nav{
-      display: flex;
-  }
+  .nav-bibli > ul {
+    height: 100px;    
+    padding-left: 5px;
+    margin: 10px;
+    padding: 10px;
+ }
 
+ .nav-bibli >ul> li{
+  margin-right: 10px;
+ }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0px;
+    height: 150px;
+    width: 100%;
+    background: crimson;
+    color: white;
+    font-size: 25px ;
+    text-align: center;
+    
+}
+.label-nav{
+  color: white;
+  font-size: 25px;
+
+}
+
+.pesquisa{
+  border-radius: 2px;
+  height: 35px;
+  width: 100px;
+  border: 1px solid black;
+  transition: .5s;
+ 
+}
+.lab-pesq{
+  margin-right: 5px;
+  height: 35px;
+  width: 350px;
+}
+.lab-pesq:focus {
+  padding-left: 5px;
+  outline: 0;
+}
+
+
+.pesquisa:hover{
+  background-color: rgba(220, 20, 60, 0.9);
+  color: white;
+ 
+  transform: scale(1.1,1.1);
+
+
+}
+div.sidebar{
+  
+  margin: 15px;
+  background: crimson;
+  height: 500px;
+  width: 25%;
+}
+.main{
+  display: flex;
+  margin: 10px;
+
+}
+
+.bookshelf{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+  margin: 10px;
+}
+.livro{
+  display: flex;
+  margin: 5px;
+ 
+}
+.livro >button >p{
+  
+ 
+  writing-mode: vertical-lr; 
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.livro >button{
+  
+  height: 250px;
+  width: 55px;
+  background: black;
+}

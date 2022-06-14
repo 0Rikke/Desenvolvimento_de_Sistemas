@@ -22,6 +22,7 @@ form{
 }
 
 label{
+    
     display: block;
 }
 .inp>button{
@@ -33,7 +34,7 @@ label{
    
 }
 .inp>input{
-   
+    text-align: center;
     height: 30px;
     width: 100%;
     border: 1px solid #9999;

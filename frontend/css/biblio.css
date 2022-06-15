@@ -4,7 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+body{
+  background-color: snow;
+}
 
 
 ul {
@@ -13,7 +15,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: crimson;
+    background-color: #1C0A00;
     height: 50px;
     
     
@@ -58,7 +60,7 @@ ul {
     bottom: 0px;
     height: 150px;
     width: 100%;
-    background: crimson;
+    background: #1C0A00;
     color: white;
     font-size: 25px ;
     text-align: center;
@@ -90,7 +92,7 @@ ul {
 
 
 .pesquisa:hover{
-  background-color: rgba(220, 20, 60, 0.9);
+  background-color: #1C0A00;
   color: white;
  
   transform: scale(1.1,1.1);
@@ -99,25 +101,28 @@ ul {
 }
 div.sidebar{
   
-  margin: 15px;
-  background: crimson;
-  height: 500px;
-  width: 25%;
+ 
 }
 .main{
   display: flex;
+  background-image:url(../img/3.jpg);
+  align-items: center;
   margin: 10px;
+  width: 98.5%;
+
 
 }
 
 .bookshelf{
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+  grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
   margin: 10px;
 }
 .livro{
   display: flex;
-  margin: 5px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left:30px;
  
 }
 .livro >button >p{
@@ -132,7 +137,12 @@ div.sidebar{
 
 .livro >button{
   
-  height: 250px;
+  height: 200px;
   width: 55px;
   background: black;
+  transition: .3s;
+}
+
+.livro >button:hover{
+  transform: scale(1.5,1.5);
 }

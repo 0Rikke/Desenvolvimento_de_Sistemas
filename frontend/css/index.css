@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body{
+  background-color: snow;
+}
+
+
 footer{
 
     display: flex;
@@ -17,7 +22,7 @@ footer{
     bottom: 0px;
     height: 150px;
     width: 100%;
-    background: crimson;
+    background: #1C0A00;
     color: white;
     font-size: 25px ;
     text-align: center;
@@ -27,7 +32,7 @@ nav ul {
     overflow: hidden;
     list-style-type: none;
     margin: 0;
-    background-color: crimson;
+    background-color: #1C0A00;
     height: 50px;
  
 
@@ -54,23 +59,30 @@ nav  li a {
 
 nav  li a:hover {
     background-color: rgba(255, 255, 255);
-    color: crimson;
+    
+    color: white;
+    transform: scale(1.2,1.2);
 
   }
 
 #txtDes{
+  margin-top: 1px;
   padding: 20px;
   text-align: center;
-  color: crimson;
+  color: #CC9544;
   font-size: 40px;
+  background-image: linear-gradient(rgba(28, 10, 0, 1),rgba(28, 10, 0, 0.9));
+ 
 }
 
 .car{
-  padding: 10px;
+  padding: 40px;
   display: flex;
   margin-bottom: 200px;
-  background-image: linear-gradient(rgba(220, 20, 60, 1), rgba(220, 20, 60, 0.8));
-  margin: 20px;
+
+
+
+  
 }
 
 .grid{
@@ -80,10 +92,13 @@ nav  li a:hover {
 }
 .grid>p{
    padding-left: 25px;
+   color:#361500;
 }
 .iten1{
   margin: 15px;
   width: 45%;
+  color:#361500;
+  font-size: 20px;
   
   
 }
@@ -107,15 +122,15 @@ nav  li a:hover {
 }
 
 .title{
-  color: white;
+  color: #CC9544;
   text-align: center;
 }
 
 #txtsobre{
   padding: 20px;
   margin-bottom: 20px;
-
-  color: crimson;
+  background-image: linear-gradient(rgba(28, 10, 0, 1),rgba(28, 10, 0, 0.9));
+  color: #CC9544;
   font-size: 40px;
 }
 .main{
@@ -123,5 +138,12 @@ nav  li a:hover {
 }
 
 .borImg{
-  background: rgba(0, 0, 0, 0.8);
+  background:#CC9544;
+}
+
+.mid{
+color: #361500;
+}
+#arp{
+  margin-bottom: 30px;
 }

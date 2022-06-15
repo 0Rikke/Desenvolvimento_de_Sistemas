@@ -1,3 +1,11 @@
 input{
     text-align: center;
 }
+body{
+    background-color: snow;
+  }
+  
+  footer{
+    bottom: 0px;
+    position: fixed;
+  }

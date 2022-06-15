@@ -4,9 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: snow;
+  }
+  
 nav
 {
-    background-color: crimson;
+    background-color: #CC9544;
     height: 50px;
     
 }
@@ -65,14 +69,14 @@ input:focus {
    
 }
 .botao:hover{
-    background-color: rgba(220, 20, 60, 0.9);
+    background-color: rgba(204, 149, 68, 0.9);
     transform: scale(1.04,1.04);
 
 }
 h1{
     text-align: center;
     padding: 15px;
-    color: crimson;
+    color: #1C0A00;
 }
 
 .seta{
@@ -112,7 +116,7 @@ footer{
     bottom: 0px;
     height: 150px;
     width: 100%;
-    background: crimson;
+    background: #CC9544;
     color: white;
     font-size: 25px ;
     text-align: center;

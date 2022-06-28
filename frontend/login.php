@@ -13,19 +13,19 @@
         <a href="index.php"><img class = "seta"src="img/setinha.png" alt="seta para voltar a página"></a>
     </nav>
     <h1>Login</h1>
-    <form action="inserir.php" method="$_POST">
+    <form action="../backend/logar.php" method="POST">
         
         <div class="inside">
   
            
                 <div class="inp">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="NameExemple">
+                    <input type="text" id="name" name ='nome'placeholder="NameExemple">
                 </div>             
 
                 <div class="inp">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha " placeholder="Senha">
+                    <input type="password" id="senha " name ='senha' placeholder="Senha">
                 </div>   
     
             <div class="check">

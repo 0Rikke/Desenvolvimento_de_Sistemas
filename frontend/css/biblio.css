@@ -73,6 +73,7 @@ ul {
 }
 
 .pesquisa{
+  border: 1px solid white;
   border-radius: 2px;
   height: 35px;
   width: 100px;
@@ -94,7 +95,7 @@ ul {
 .pesquisa:hover{
   background-color: #1C0A00;
   color: white;
- 
+  border: white solid 1px;
   transform: scale(1.1,1.1);
 
 

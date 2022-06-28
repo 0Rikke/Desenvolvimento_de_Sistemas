@@ -12,27 +12,27 @@
         <a href="index.php"><img class = "seta"src="img/setinha.png" alt="seta para voltar a página"></a>
     </nav>
     <h1>Cadastro de Usuário</h1>
-    <form action="inserir.php" method="$_POST">
+    <form action="../backend/inserirCliente.php" method ='POST'>
         
         <div class="inside">
             <div class="grid">  
                 <div class="inp">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="NameExemple">
+                    <input type="text" id="name" name ='nome' placeholder="NameExemple">
                 </div>
                 <div class="inp">
                     <label for="Lname">Sobrenome</label>
-                    <input type="text" id="Lname" placeholder="lastNameExample">
+                    <input type="text" id="Lname" name ='sobrenome' placeholder="lastNameExample">
                 </div>
             </div>
                 <div class="inp">           
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="EmailExample@gmail.com">
+                    <input type="email" id="email" name='email' placeholder="EmailExample@gmail.com">
                 </div>
             <div class="grid"> 
                 <div class="inp">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha " placeholder="Senha">
+                    <input type="password" id="senha " name='senha' placeholder="Senha">
                 </div>   
                 <div class="inp"> 
                     <label for="senhaConf">Confirmar Senha</label>

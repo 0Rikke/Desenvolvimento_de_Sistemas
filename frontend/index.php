@@ -1,3 +1,13 @@
+<?php
+    //funciono :)
+
+if (isset($_COOKIE['login']))
+{
+    $nome = $_COOKIE['login'];
+    $nome = strtoupper($nome);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +25,16 @@
         <ul id="nav">
             <li><a href="index.php"> Home</a></li>
             <li><a href="biblioteca.php"> Biblioteca </a></li>
-            <li style="float:right"><a href="login.php">Logar</a></li>
-            <li style="float:right"><a href="cadastro_cli.php">Cadastrar</a></li>
+           
+
+            <!--
+
+
+                So mudou a palavra nao mudou os links
+
+            -->
+            <li style="float:right"><a href="login.php"><?php if(isset($nome)){print $nome;}else{print 'Logar';}?></a></li>
+            <li style="float:right"><a href="cadastro_cli.php"><?php if(isset($nome)){print '';}else{print 'Cadastrar';}?></a></li>
         </ul>
     </nav>
 <!-- 
@@ -131,3 +149,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+ <?php
+
+
+    // var_dump($_COOKIE);
+
+    //          if(isset($_COOKIE['login']))
+    //         {
+    //             $nome = 'henrique';
+    //             echo $nome;
+    //         }else{
+    //             echo 'bananas';
+    //         }
+   
+    // $login_cookie = $_COOKIE['cookie'];
+    // if(isset($login_cookie)){
+    //   echo"Bem-Vindo, $login_cookie <br>";
+    //   echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
+    // }else{
+    //   echo"Bem-Vindo, convidado <br>";
+    //   echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
+    //   echo"<br><a href='login.php'>Faça Login</a> Para ler o conteúdo";
+    // }
+
+    
+
+?>

@@ -35,6 +35,14 @@ class cliente
             ]);
 
         }
+
+        public function procurar($nome, $senha)
+        {
+            global $_DATABASE ;
+            $db = new PDO("mysql:host={$_DATABASE['HOSTNAME']};dbname={$_DATABASE['DBNAME']}", $_DATABASE['USER'], $_DATABASE['PWD']);
+            $consulta = $db->query("SELECT COUNT(*) FROM `cliente` WHERE nome = '$nome' and senha ='$senha'");
+            return $consulta->fetchColumn();
+        }
     }
 
 

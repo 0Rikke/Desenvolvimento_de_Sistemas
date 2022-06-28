@@ -1,3 +1,13 @@
+<?php
+
+
+if (isset($_COOKIE['login']))
+{
+    $nome = $_COOKIE['login'];
+    $nome = strtoupper($nome);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +24,10 @@
 
 <body>
     <nav>
-        <ul id="a">
-            <li><a href="index.php"> Home</a></li>
-            <li style="float:right"><a href="login.php">Logar</a></li>
-            <li style="float:right"><a href="cadastro_cli.php">Cadastrar</a></li>
+        <ul >
+            <li><a id="a" href="index.php"> Home</a></li>
+            <li style="float:right"><?php if(isset($nome)){print '<a href="#">'.$nome.'</a></li>';}else{print '<a href="login.php">Logar</a></li>';}?>
+            <li style="float:right"><?php if(isset($nome)){print'<a href="../backend/logout.php">LOGOUT</a>';}else{print '<a href ="cadastro_Cli.php">Cadastrar</a>';}?></li>
         </ul>
     </nav>
 

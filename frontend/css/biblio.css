@@ -38,9 +38,13 @@ ul {
 
   li a:hover {
     background-color: rgba(255, 255, 255);
+    transform: scale(1.2,1.2);
     color: crimson;
   }
 
+  #a {
+    margin-left: 32px;
+  }
   .nav-bibli > ul {
     height: 100px;    
     padding-left: 5px;

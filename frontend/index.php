@@ -1,5 +1,5 @@
 <?php
-    //funciono :)
+
 
 if (isset($_COOKIE['login']))
 {
@@ -33,8 +33,9 @@ if (isset($_COOKIE['login']))
                 So mudou a palavra nao mudou os links
 
             -->
-            <li style="float:right"><a href="login.php"><?php if(isset($nome)){print $nome;}else{print 'Logar';}?></a></li>
-            <li style="float:right"><a href="cadastro_cli.php"><?php if(isset($nome)){print '';}else{print 'Cadastrar';}?></a></li>
+            <li style="float:right"><?php if(isset($nome)){print '<a href="#">'.$nome.'</a></li>';}else{print '<a href="login.php">Logar</a></li>';}?>
+            <li style="float:right"><?php if(isset($nome)){print'<a href="../backend/logout.php">LOGOUT</a>';}else{print '<a href ="cadastro_Cli.php">Cadastrar</a>';}?></li>
+            
         </ul>
     </nav>
 <!-- 

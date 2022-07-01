@@ -52,90 +52,31 @@ if (isset($_COOKIE['login']))
 
             <!-- gerar divs com estilos aleatorios, tamnha, cor etc.-->
             <div class="bookshelf">
-                <div class="livro">
-                    <button onclick=""><p>Senho dos aneis</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>Hobbit</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>O alquimista</p></button>
-                </div>
+                <form action="compra.php" method="POST">
+                <!--
 
-                <div class="livro">
-                <button onclick=""><p>Dom casmuro</p></button>
-                </div>
-
-                <div class="livro">
-                    <button onclick=""><p>Senho dos aneis</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>Hobbit</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>O alquimista</p></button>
-                </div>
-
-                <div class="livro">
-                <button onclick=""><p>Dom casmuro</p></button>
-                </div>
-                <div class="livro">
-                    <button onclick=""><p>Senho dos aneis</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>Hobbit</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>O alquimista</p></button>
-                </div>
-
-                <div class="livro">
-                <button onclick=""><p>Dom casmuro</p></button>
-                </div>
-                <div class="livro">
-                    <button onclick=""><p>Senho dos aneis</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>Hobbit</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>O alquimista</p></button>
-                </div>
-
-                <div class="livro">
-                <button onclick=""><p>Dom casmuro</p></button>
-                </div>
-                <div class="livro">
-                    <button onclick=""><p>Senho dos aneis</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>Hobbit</p></button>
-                </div>
-                
-                <div class="livro">
-                <button onclick=""><p>O alquimista</p></button>
-                </div>
-
-                <div class="livro">
-                <button onclick=""><p>Dom casmuro</p></button>
-                </div>
+                criar essas divs com javascript usando o php pra puxar do banco e botar 
+                um indentificador junto para passar por post para na outra pagina pegar esse indentificador
+                e botar as informações na tela
 
 
-            </div>
-            
+                -->
 
-            
-         
+                <div class="livro">
+                    
+                    <button  type="submit"><!-- aqui dentro do botao botar a capa do livro no caso a lateral dele--><p>Senho dos aneis</p></button>
+                </div>
+                    
+                
 
+                <div class="livro">
+                    <button type="submit"><p>Senho dos aneis</p></button>
+                </div>
+                
+                </form>
+
+
+            </div>                         
 
         </div>
 

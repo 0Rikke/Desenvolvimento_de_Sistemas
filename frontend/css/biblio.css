@@ -102,11 +102,6 @@ ul {
   border: white solid 1px;
   transform: scale(1.1,1.1);
 
-
-}
-div.sidebar{
-  
- 
 }
 .main{
   display: flex;
@@ -150,4 +145,8 @@ div.sidebar{
 
 .livro >button:hover{
   transform: scale(1.5,1.5);
+}
+
+form{
+  display: flex;
 }

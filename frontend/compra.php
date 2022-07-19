@@ -1,10 +1,25 @@
 <?php
-
+require "../backend/lib/classLivro.php";
 if (isset($_COOKIE['login']))
 {
-    $nome = $_COOKIE['login'];
-    $nome = strtoupper($nome);
+    $nomeL = $_COOKIE['login'];
+    $nomeL = strtoupper($nomeL);
+
+    
 }
+
+
+
+
+$livros = new Livro();
+
+$livro = $livros->buscarPorId($_POST['id']);
+
+$nome = $livro->getNome();
+$autor = $livro->getAutor();
+$editora = $livro->getEditora();
+$puclicacao = $livro->getPublicacao();
+
 
 ?>
 <!DOCTYPE html>
@@ -25,25 +40,23 @@ if (isset($_COOKIE['login']))
         <ul id="nav">
             <li><a href="index.php"> Home</a></li>
             <li><a href="biblioteca.php"> Biblioteca </a></li>
-            <li style="float:right"><?php if(isset($nome)){print '<a href="#">'.$nome.'</a></li>';}else{print '<a href="login.php">Logar</a></li>';}?>
-            <li style="float:right"><?php if(isset($nome)){print'<a href="../backend/logout.php">LOGOUT</a>';}else{print '<a href ="cadastro_Cli.php">Cadastrar</a>';}?></li>
+            <li style="float:right"><?php if(isset($nomeL)){print '<a href="#">'.$nomeL.'</a></li>';}else{print '<a href="login.php">Logar</a></li>';}?>
+            <li style="float:right"><?php if(isset($nomeL)){print'<a href="../backend/logout.php">LOGOUT</a>';}else{print '<a href ="cadastro_Cli.php">Cadastrar</a>';}?></li>
         </ul>
     </nav>
 <main class="grid">
 
     <div class="livro-compra block">
        <div class="backgorund-livro">
-            <img src="img/111.jpg" alt="">
+            <img src="img/<?php echo $nome.'.jpg' ?>" alt="">
        </div>
     </div>
     <div class="livro-informacao block">
-        <form action="compra.php">
-            <label for="frete">Calcular Frete</label>
-                <input type="text" name ="frete" placeholder="Digite seu CEP"><button type="submit" class="frete">Calcular</button>
-        </form>
+        <h1>Resomu da obra</h1>
+        <p>O livro relata que os animais que viviam na Fazenda dos Bichos se sentiram mal tratados pelo seu cuidador, Sr Jones, com uma péssima qualidade de vida, chegando em determinado momento a faltar comida para todos e, depois de várias deliberações, resolveram agir para expulsar os humanos e assumir o controle da fazenda.</p>
     </div>
     <div class="livro-total block">
-        <h4>Titulo do livro | no caso de ecormeci aqui tem o titulo da venda tipo mercado livre</h4>
+        <h4><?php echo $nome?> </h4>
              <div>Avaliação | 4.6 *</div>   
                  <div class="prec">
                     <span>R$20,00</span>

@@ -59,13 +59,9 @@ button:hover{
     text-align: center;
 }
 
-.backgorund-livro{
-    width: 300px;
-    height: 400px;
-    background: black;
-}
+
 .backgorund-livro>img{
-    min-height: 400px;
+    max-height: 450px;
 }
 
 .botao-frete{

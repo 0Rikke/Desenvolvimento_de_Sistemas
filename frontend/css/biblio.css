@@ -97,10 +97,10 @@ ul {
 
 
 .pesquisa:hover{
-  background-color: #1C0A00;
+  background-color: #CC9544;
   color: white;
-  border: white solid 1px;
-  transform: scale(1.1,1.1);
+
+  transform: scale(1.15,1.15);
 
 }
 .main{

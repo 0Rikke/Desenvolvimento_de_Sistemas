@@ -26,12 +26,12 @@ class cliente
             global $_DATABASE ;
             $db = new PDO("mysql:host={$_DATABASE['HOSTNAME']};dbname={$_DATABASE['DBNAME']}", $_DATABASE['USER'], $_DATABASE['PWD']);
             $consulta = $db->prepare("INSERT INTO cliente(nome, sobrenome, email,senha) VALUES(:nome,:sobrenome,:email,:senha)");
-            $consulta->execute([
+            $consulta->execute
+            ([
                 ':nome' => $this->nome,
                 ':sobrenome' => $this->sobrenome,
                 ':email' => $this->email,
                 ':senha' => $this->senha
-
             ]);
 
         }

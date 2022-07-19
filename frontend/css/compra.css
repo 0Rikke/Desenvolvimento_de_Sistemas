@@ -3,10 +3,88 @@ main{
     
 }
 .grid{
+    padding: 20px;
     display: grid;
     grid-template-columns: auto auto auto ;
-    width: 100vw;
+    width: 100%;
 }
 .block{
     display: block;
+}
+.livro-total{
+    color: black;
+    width: 400px;
+    
+    height: 400px;
+    border: solid 1px #9999;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 20px;
+}
+
+button{
+
+    border: none;
+    margin: 5px;
+    background-color: #CC9544;
+    height: 50px;
+    width: 200px;
+    border-radius: 3px;
+    transition: .5s;
+}
+button:hover{
+    border: black 1px solid;
+    background-color: #ffd000;
+    transform: scale(1.05,1.05);
+
+
+
+}
+
+.frete{
+    margin: 5px;
+    height: 35px;
+    width: 130px;
+}
+
+.livro-total> form {
+    margin: 10px;
+    padding: 5px;
+}
+.livro-total> form >input {
+ width: 140px;
+}
+
+.botoes{
+    text-align: center;
+}
+
+.backgorund-livro{
+    width: 300px;
+    height: 400px;
+    background: black;
+}
+.backgorund-livro>img{
+    min-height: 400px;
+}
+
+.botao-frete{
+    background-color: #CC9544;
+    font-size: 13px;
+    border: none;
+    margin: 5px;
+    height: 50px;
+    width: 100px;
+    border-radius: 3px;
+    transition: .5s; 
+}
+.botao-frete:hover{
+    background-color: #ffd000;
+    transform: scale(1.15,1.15);
+  
+}
+div.prec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

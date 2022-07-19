@@ -7,7 +7,7 @@ try{
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
     $count = $c->procurar($nome,$senha);
-    $count = 1;
+ 
     if ($count<=0)
     {
         echo 'vixe fera ta tentando me tapear?';
@@ -21,7 +21,7 @@ try{
     
     
 }catch( PDOException $e){
-    throw new Exception("Error Processing Request", $e);
+    throw new Exception("Error Processing Request" . $e);
     
 }
 

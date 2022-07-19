@@ -12,7 +12,7 @@ try{
     header("location: ../frontend/login.php"); 
     
 }catch( PDOException $e){
-    throw new Exception("Error Processing Request", $e);
+    throw new Exception("Error Processing Request". $e);
     
 }
 
